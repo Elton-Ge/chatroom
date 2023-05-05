@@ -15,6 +15,6 @@ auto scroll to the bottom when someone typing new message
 Handle multiple user with same name by giving each user a random badge color
 split msg sent and received by two columns
 all css writen by hands, although not perfect due to limited time
-
+Grouped consecutive msgs from the same user
 
 
