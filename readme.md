@@ -14,7 +14,7 @@ Real time chat app built with React, Redux, Firebase Authentication, FireStore, 
 8. auto scroll to the bottom when there is newest message
 9. Handle multiple user with same name by giving each user a random badge color
 10. split msg by sent and received into two columns
-11. all css writen by hands, although not perfect due to limited time
+11. all css write by hands, although not perfect due to limited time
 12. Grouped consecutive msgs from the same user
 
 ## LIVE DEMO: https://chatroom-e0c7b.web.app/
