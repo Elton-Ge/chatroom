@@ -1,6 +1,6 @@
 # Warrior Chat Room
 
-Real time chat app built with React, Redux, Firebase Authentication, FireStore, CSS Module and Typescript.
+Real time group chat app built with React, Redux, Firebase Authentication, FireStore, CSS Module and Typescript.
 
 ## Features
 
