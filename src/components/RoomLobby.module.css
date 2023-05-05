@@ -7,11 +7,10 @@
 }
 
 .card {
-  width: 360px;
+  width: 400px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .card-header {
@@ -22,7 +21,7 @@
   height: 100px;
   background-color: #3f51b5;
   color: #fff;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -51,7 +50,7 @@
 
 .form-group input {
   width: 100%;
-  padding: 16px 20px;
+  padding: 16px 5px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -98,6 +97,18 @@
 }
 
 .signOut {
-  background-color: yellow;
+  background-color: yellowgreen;
   margin: 10px;
+  color: #fff;
+  outline: plum;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+    font-size: 12px;
+  }
+  .btn {
+    padding: 6px 12px;
+  }
 }

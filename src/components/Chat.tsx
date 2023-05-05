@@ -30,7 +30,9 @@ export const Chat = () => {
   const dispatch = useAppDispatch();
   const msgCollection = collection(db, "messages");
   const ref = useRef<HTMLDivElement>(null);
-  const handleSend = async () => {
+  const handleSend = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
     if (!newMessage) {
       return;
     }
@@ -78,8 +80,10 @@ export const Chat = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles["card-header"]}>
-          ChatRoom:{userRoom}
-          <button className={styles.leaveBtn} onClick={handleLeaveRoom}>Leave Room</button>
+          ChatRoom: {userRoom}
+          <button className={styles.leaveBtn} onClick={handleLeaveRoom}>
+            Leave Room
+          </button>
         </div>
         <div className={styles["card-body"]}>
           {queryMsgs.map((msg) => {
@@ -114,22 +118,23 @@ export const Chat = () => {
             }
           })}
         </div>
-        <div className={styles.form}>
+        <form className={styles.form} onSubmit={handleSend}>
           <input
             type="text"
             className={styles["form-input"]}
             placeholder="Type your message here"
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
+            required
           />
           <button
-            onClick={handleSend}
+            type="submit"
             className={styles["form-button"]}
             disabled={!newMessage}
           >
             Send
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
