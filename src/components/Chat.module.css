@@ -102,6 +102,7 @@
   background-color: #f8f8f8;
   margin: 0 2px;
   color: #000;
+  margin: 0 5px;
 }
 
 .form-button {
@@ -159,7 +160,7 @@
 }
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card {
     width: 100%;
     border-radius: 0;
@@ -168,6 +169,41 @@
   .card-header {
     height: 60px;
     font-size: 18px;
+  }
+
+  .form {
+    height: 60px;
+    line-height: 60px;
+  }
+  .form-button {
+    padding: 5px auto;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+@media only screen and (max-height: 768px) {
+  .card {
+    max-height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .card-header {
+    height: 60px;
+    font-size: 18px;
+  }
+  .card-body {
+    height:200px;
   }
 
   .form {

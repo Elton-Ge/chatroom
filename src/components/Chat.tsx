@@ -80,7 +80,7 @@ export const Chat = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles["card-header"]}>
-          ChatRoom: {userRoom}
+          Room: {userRoom}
           <button className={styles.leaveBtn} onClick={handleLeaveRoom}>
             Leave Room
           </button>
