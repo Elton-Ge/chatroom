@@ -4,7 +4,7 @@ Real time chat app built with React, Redux, Firebase Authentication, FireStore, 
 
 ## Features
 
-1. SignIn/SignOut with Google;
+1. SignIn with Google;
 2. Create Room for group-chat;
 3. Leave Room for group-chat;
 4. Chat with multiple users in the same room;
