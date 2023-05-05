@@ -17,4 +17,5 @@ Real time chat app built with React, Redux, Firebase Authentication, FireStore, 
 11. all css writen by hands, although not perfect due to limited time
 12. Grouped consecutive msgs from the same user
 
+## LIVE DEMO: https://chatroom-e0c7b.web.app/
 
