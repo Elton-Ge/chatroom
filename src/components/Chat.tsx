@@ -112,11 +112,11 @@ export const Chat = () => {
                     {getFirstTwoLetters(msg.user)}
                   </span>
                   {msg.text}
-                  <div ref={ref}></div>
                 </div>
               );
             }
           })}
+          <div ref={ref}></div>
         </div>
         <form className={styles.form} onSubmit={handleSend}>
           <input
